@@ -71,6 +71,18 @@
         }
     }
 </script>
+
+<script>
+    // 确保DOM加载完成后再绑定事件
+    function toggleAbstract(abstractId) {
+        var abstract = document.getElementById(abstractId);  // 获取指定id的元素
+        if (abstract.style.display === "none") {
+            abstract.style.display = "block";  // 显示摘要
+        } else {
+            abstract.style.display = "none";  // 隐藏摘要
+        }
+    }
+</script>
     
 </body>
 </html>
