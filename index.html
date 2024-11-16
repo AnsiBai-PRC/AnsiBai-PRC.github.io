@@ -25,15 +25,15 @@
     <ul>
         <li>
         May 31, 2022, <a href="https://www.math.nagoya-u.ac.jp/~yanagida/SUSTech-Nagoya2022.html" target="_blank">SUSTech-Nagoya workshop on Quantum Science 2022</a>, 
-        "2-categorical interpretation of the Reconstruction Theorem for Weak Hopf Algebras" (<a href="Bai - Reconstruction_of_WHA.pdf" target="_blank">Slides</a>)
+        "2-Categorical Interpretation of the Reconstruction Theorem for Weak Hopf Algebras" (<a href="Bai - Reconstruction_of_WHA.pdf" target="_blank">Slides</a>)
         <button onclick="toggleAbstract('abstract1')" style="border: none; background: none; font-size: 18px; cursor: pointer;">
             &#9660;  <!-- 向下的小三角 -->
         </button>
         <div id="abstract1" style="display:none; margin-top: 10px;">
             <p>This presentation covers the application of deep learning techniques in image recognition tasks. It highlights the evolution of CNN architectures, their applications in object detection, and future trends in integrating deep learning with computer vision.</p>
-            <a href="javascript:void(0);" onclick="toggleAbstract('abstract1', this)" style="text-decoration: none; font-size: 18px; cursor: pointer;">
+            <button onclick="toggleAbstract('abstract1', this)" style="text-decoration: none; font-size: 18px; cursor: pointer;">
                 <span id="triangle1_close">&#9650;</span>  <!-- 实心倒三角（收起按钮） -->
-            </a>
+            </button>
         </div>
     </li>
         <li>
@@ -51,26 +51,7 @@
     </div>
 </li>
 
-
-
     </ul>
-
-<script>
-    // 切换摘要显示/隐藏的函数
-    function toggleAbstract(abstractId, linkElement) {
-        var abstract = document.getElementById(abstractId);
-        var triangle = linkElement.querySelector('span'); // 获取三角符号
-
-        // 如果摘要是隐藏的，则显示它，并改变三角符号
-        if (abstract.style.display === "none" || abstract.style.display === "") {
-            abstract.style.display = "block";
-            triangle.innerHTML = "hide abstract ▲"; // 更改为实心三角
-        } else {
-            abstract.style.display = "none";
-            triangle.innerHTML = "abstract ▼"; // 更改为倒三角
-        }
-    }
-</script>
 
 <script>
     // 确保DOM加载完成后再绑定事件
@@ -86,6 +67,3 @@
     
 </body>
 </html>
-
-
-
