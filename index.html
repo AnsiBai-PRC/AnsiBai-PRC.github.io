@@ -36,17 +36,38 @@
             </a>
         </div>
     </li>
-        <li>2022年，XX大学研究生论坛，"机器学习算法的最新进展"（主讲人）</li>
+        <li>
+    2023, <a href="https://www.example-conference.com" target="_blank">XX International Conference</a>, 
+    "Deep Learning Applications in Image Recognition" (Speaker)
+    
+    <!-- 点击显示/隐藏摘要的链接 -->
+    <a href="javascript:void(0);" onclick="toggleAbstract('abstract1', this)" style="text-decoration: none; font-size: 18px; cursor: pointer;">
+        <span id="triangle1">disclose ▼</span> <!-- 初始为显示按钮，倒三角 -->
+    </a>
+    
+    <!-- 摘要内容，默认隐藏 -->
+    <div id="abstract1" style="display:none; margin-top: 10px;">
+        <p>This presentation covers the application of deep learning techniques in image recognition tasks. It highlights the evolution of CNN architectures, their applications in object detection, and future trends in integrating deep learning with computer vision.</p>
+    </div>
+</li>
+
+
+
     </ul>
 
 <script>
-    // 这个函数控制每个报告的abstract的显示和隐藏
-    function toggleAbstract(abstractId) {
+    // 切换摘要显示/隐藏的函数
+    function toggleAbstract(abstractId, linkElement) {
         var abstract = document.getElementById(abstractId);
-        if (abstract.style.display === "none") {
+        var triangle = linkElement.querySelector('span'); // 获取三角符号
+
+        // 如果摘要是隐藏的，则显示它，并改变三角符号
+        if (abstract.style.display === "none" || abstract.style.display === "") {
             abstract.style.display = "block";
+            triangle.innerHTML = "disclose ▲"; // 更改为实心三角
         } else {
             abstract.style.display = "none";
+            triangle.innerHTML = "disclose ▼"; // 更改为倒三角
         }
     }
 </script>
