@@ -38,3 +38,16 @@
 
 </body>
 </html>
+
+<script>
+    // 这个函数控制每个报告的abstract的显示和隐藏
+    function toggleAbstract(abstractId) {
+        var abstract = document.getElementById(abstractId);
+        if (abstract.style.display === "none") {
+            abstract.style.display = "block";
+        } else {
+            abstract.style.display = "none";
+        }
+    }
+</script>
+
