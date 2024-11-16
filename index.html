@@ -41,12 +41,12 @@
     "Deep Learning Applications in Image Recognition" (Speaker)
     
     <!-- 点击显示/隐藏摘要的链接 -->
-    <a href="javascript:void(0);" onclick="toggleAbstract('abstract1', this)" style="text-decoration: none; font-size: 18px; cursor: pointer;">
+    <a href="javascript:void(0);" onclick="toggleAbstract('abstract2', this)" style="text-decoration: none; font-size: 18px; cursor: pointer;">
         <span id="triangle1">disclose ▼</span> <!-- 初始为显示按钮，倒三角 -->
     </a>
     
     <!-- 摘要内容，默认隐藏 -->
-    <div id="abstract1" style="display:none; margin-top: 10px;">
+    <div id="abstract2" style="display:none; margin-top: 10px;">
         <p>This presentation covers the application of deep learning techniques in image recognition tasks. It highlights the evolution of CNN architectures, their applications in object detection, and future trends in integrating deep learning with computer vision.</p>
     </div>
 </li>
@@ -64,10 +64,10 @@
         // 如果摘要是隐藏的，则显示它，并改变三角符号
         if (abstract.style.display === "none" || abstract.style.display === "") {
             abstract.style.display = "block";
-            triangle.innerHTML = "disclose ▲"; // 更改为实心三角
+            triangle.innerHTML = "hide abstract ▲"; // 更改为实心三角
         } else {
             abstract.style.display = "none";
-            triangle.innerHTML = "disclose ▼"; // 更改为倒三角
+            triangle.innerHTML = "abstract ▼"; // 更改为倒三角
         }
     }
 </script>
