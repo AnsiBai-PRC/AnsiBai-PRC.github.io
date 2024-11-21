@@ -8,6 +8,11 @@
     margin-bottom: 20px; /* 设置列表项之间的下间距 */
         }    
     </style>
+    <script>
+        function ZhiHao_Zhang(){
+            <a href="https://bimsa.net/people/ZhihaoZhang/">Zhi-Hao Zhang</a>
+    }
+    </script>
     <title></title>
 </head>
 <body style="font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; background-color: #f5f5f5;">
@@ -139,6 +144,22 @@ Quantum Science 2023
             <a href="https://bimsa.net/people/HaoZheng/">Hao Zheng</a>.
         </li>
     </ul>
+    <div id="container"></div>
+
+    <script>
+        function insertLongCode() {
+            const html = `
+                <div>
+                    <h1>这是一段非常长的代码</h1>
+                    <p>描述文本...</p>
+                </div>
+            `;
+            document.getElementById('container').innerHTML = html;
+        }
+
+        // 调用该函数来插入长代码
+        insertLongCode();
+    </script>
 
 <script>
     // 确保DOM加载完成后再绑定事件
